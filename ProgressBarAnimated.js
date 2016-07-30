@@ -36,10 +36,10 @@ class ProgressBarAnimated extends React.Component {
     return (
       <View>
         <View style={[styles.flexBox, styles.progressBar, this.props.progressBarStyle]}>
-          <View style={[styles.progressBar_left, {flex:this.state.progress}, 
-            {backgroundColor: this.props.fillColor}]} />
-          <View style={[styles.progressBar_right, {flex:100 - this.state.progress}, 
-              {backgroundColor: this.props.unfilledColor}]} />
+          <View style={[{flex:this.state.progress}, 
+              {backgroundColor: this.props.fillColor || '#D50000'}]} />
+          <View style={[{flex:100 - this.state.progress}, 
+              {backgroundColor: this.props.unfilledColor || '#FFF'}]} />
         </View>
       </View>
     )
@@ -57,18 +57,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#D50000',
     borderRadius: 10,
-  },
-  progressBar_left: {
-    backgroundColor: '#D50000',
-  },
-  progressBar_right: {
-    backgroundColor: '#fff'
   }
 })
 
 ProgressBarAnimated.PropTypes = {
   progressBarStyle: React.PropTypes.node,
-  progress: React.PropTypes.number.isRequired,
+  progress: React.PropTypes.number,
   fillColor: React.PropTypes.color,
   unfilledColor: React.PropTypes.color
 }
