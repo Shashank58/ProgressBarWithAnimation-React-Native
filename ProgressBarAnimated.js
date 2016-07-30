@@ -66,4 +66,11 @@ const styles = StyleSheet.create({
   }
 })
 
+ProgressBarAnimated.PropTypes = {
+  progressBarStyle: React.PropTypes.node,
+  progress: React.PropTypes.number.isRequired,
+  fillColor: React.PropTypes.color,
+  unfilledColor: React.PropTypes.color
+}
+
 module.exports = ProgressBarAnimated

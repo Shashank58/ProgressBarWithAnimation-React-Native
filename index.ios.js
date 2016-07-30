@@ -20,9 +20,6 @@ class ProgressBar extends Component {
       <View style={styles.container}>
         <ProgressBarAnimated
             progress={70}
-            progressBarStyle={{borderWidth: 1, margin: 16, height: 14}}
-            fillColor='red'
-            unfilledColor='white'
             />
       </View>
     )
@@ -35,6 +32,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#F5FCFF',
   }
-});
+})
 
 AppRegistry.registerComponent('ProgressBar', () => ProgressBar);
