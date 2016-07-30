@@ -12,14 +12,17 @@ import {
   View
 } from 'react-native';
 
-import ProgressBarClassic from './ProgressBarClassic'
+import ProgressBarAnimated from './ProgressBarAnimated'
 
 class ProgressBar extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProgressBarClassic
-            progress={40}
+        <ProgressBarAnimated
+            progress={70}
+            progressBarStyle={{borderWidth: 1, margin: 16, height: 14}}
+            fillColor='red'
+            unfilledColor='white'
             />
       </View>
     )
@@ -29,7 +32,7 @@ class ProgressBar extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 50,
+    justifyContent: 'center',
     backgroundColor: '#F5FCFF',
   }
 });
