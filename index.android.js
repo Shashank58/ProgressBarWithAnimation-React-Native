@@ -18,9 +18,7 @@ class ProgressBar extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProgressBarAnimated
-            progress={40}
-            />
+        <ProgressBarAnimated progress={50} style={{marginLeft: 16, marginRight: 16}}/>
       </View>
     )
   }
@@ -29,9 +27,9 @@ class ProgressBar extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 50,
+    justifyContent: 'center',
     backgroundColor: '#F5FCFF',
   }
-});
+})
 
 AppRegistry.registerComponent('ProgressBar', () => ProgressBar);
