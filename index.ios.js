@@ -18,7 +18,7 @@ class ProgressBar extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProgressBarAnimated progress={50}/>
+        <ProgressBarAnimated progress={50} style={{marginLeft: 16, marginRight: 16}}/>
       </View>
     )
   }
