@@ -6,6 +6,7 @@ class ProgressBarAnimated extends React.Component {
     super(props)
     this.state = {
       progress: 0,
+      startDelay: this.props.startDelay || 300
     }
   }
 
@@ -21,7 +22,7 @@ class ProgressBarAnimated extends React.Component {
             }
         }, 30)
 
-    }, 300)
+    }, this.state.startDelay)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -64,7 +65,8 @@ ProgressBarAnimated.PropTypes = {
   style: React.PropTypes.node,
   progress: React.PropTypes.number,
   fillColor: React.PropTypes.color,
-  unfilledColor: React.PropTypes.color
+  unfilledColor: React.PropTypes.color,
+  startDelay: React.PropTypes.number
 }
 
 module.exports = ProgressBarAnimated

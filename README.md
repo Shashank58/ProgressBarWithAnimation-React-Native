@@ -25,3 +25,4 @@ A cross platform progressbar library using react native which is completely cust
 	style: Styling for the progress bar(including borderWidth, borderColor, borderRadius....)
 	fillColor: Color of filled portion in progress bar
 	unfilledColor: Color of unfilled portion in progress bar 	
+	startDelay: Specify the time after which the fill animation should start in ms(default is 300)
