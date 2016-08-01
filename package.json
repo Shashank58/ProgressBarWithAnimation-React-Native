@@ -1,12 +1,27 @@
 {
-  "name": "ProgressBar",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
-  },
+  "name": "progress-bar-animated",
+  "version": "1.0.0",
+  "description": "Progressbar with animation for react native",
+  "main": "ProgressBarAnimated.js",
   "dependencies": {
-    "react": "15.2.1",
-    "react-native": "0.30.0"
-  }
+    "react": "^15.2.1",
+    "react-native": "^0.30.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shashank58/ProgressBarWithAnimation-React-Native.git"
+  },
+  "keywords": [
+    "progressbar"
+  ],
+  "author": "Shashank Udupa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shashank58/ProgressBarWithAnimation-React-Native/issues"
+  },
+  "homepage": "https://github.com/Shashank58/ProgressBarWithAnimation-React-Native#readme"
 }
