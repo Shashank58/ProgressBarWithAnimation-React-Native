@@ -21,7 +21,7 @@ A cross platform progressbar library using react native which is completely cust
 
 #Available props
 
-	**progress:** Filled level of progress bar
-	**style:** Styling for the progress bar(including borderWidth, borderColor, borderRadius....)
-	**fillColor:** Color of filled portion in progress bar
-	**unfilledColor:** Color of unfilled portion in progress bar 	
+	progress: Filled level of progress bar
+	style: Styling for the progress bar(including borderWidth, borderColor, borderRadius....)
+	fillColor: Color of filled portion in progress bar
+	unfilledColor: Color of unfilled portion in progress bar 	
