@@ -19,8 +19,8 @@ class ProgressBar extends Component {
     return (
       <View style={styles.container}>
         <ProgressBarAnimated 
-          progress={50}
-          startDelay={100} 
+          progress={70}
+          filledColor='red'
           style={{marginLeft: 16, marginRight: 16}}
           />
       </View>

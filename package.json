@@ -1,6 +1,6 @@
 {
   "name": "progress-bar-animated",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Progressbar with animation for react native",
   "main": "ProgressBarAnimated.js",
   "dependencies": {
